@@ -1,0 +1,26 @@
+
+
+body{
+    background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav:first-child{
+    display: flex;
+    height: 50px;
+    background-color: #D6E3F8;
+    flex-direction: column;
+    align-items: flex-end;
+}
+nav>div{
+    font-size: 20px;
+}
+
+img{
+    justify-content: space-around;
+    margin: 5px;
+}

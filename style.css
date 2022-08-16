@@ -24,3 +24,7 @@ img{
     justify-content: space-around;
     margin: 5px;
 }
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+}

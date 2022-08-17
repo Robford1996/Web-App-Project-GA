@@ -21,8 +21,11 @@ nav>div{
 }
 
 img{
-    justify-content: space-around;
-    margin: 5px;
+    justify-content: space-between;
+    margin: 10px;
+    /* flex-wrap: wrap;
+    display: flex;
+    flex-direction: row; */
 }
 
 button{
@@ -31,7 +34,7 @@ button{
 
 .container{
     position: relative;
-    width: 50%;
+    /* width: 50%; */
 }
 
 /* .container img{
@@ -50,4 +53,10 @@ button{
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+nav{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
 }

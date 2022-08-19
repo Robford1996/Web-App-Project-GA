@@ -1,9 +1,8 @@
 
 
-/* body{
-    /* background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
-    background-repeat: no-repeat;
-    background-size: cover; */
+body{
+    background-color: #CCCCFF;
+}
 
 h1{
     font-family: 'Courier New', Courier, monospace;
@@ -12,7 +11,7 @@ h1{
 div#first{
     display: flex;
     height: 50px;
-    background-color: #D6E3F8;
+    background-color: paleturquoise;
     flex-direction: column;
     align-items: flex-end;
 }
@@ -62,36 +61,35 @@ div#home{
     background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 1000px;
     width: 100%;
 }
 div#magic{
     color: blue;
-    background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
-    background-size: cover;
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/dc/6d/64/cinderella-s-castle-at.jpg?w=1200&h=-1&s=1");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 1000px;
     width: 100%;
 }
 div#epcot{
-    background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
+    background-image: url("https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2020/12/y762yu4576t131.jpg");
     background-size: cover;
     color: blue;
-    height: 100%;
+    height: 1000px;
     width: 100%;
 }
 div#hollywood{
-    background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
+    background-image: url("https://i.ytimg.com/vi/yTp3tOVKDxg/maxresdefault.jpg");
     background-size: cover;
     color: blue;
-    height: 100%;
+    height: 1000px;
     width: 100%;
 }
 div#animal{
-    background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
+    background-image: url("https://www.disneyfoodblog.com/wp-content/uploads/2021/03/2021-WDW-Animal-Kingdom-Tree-of-Life-Stock2.jpg");
     background-size: cover;
     color: blue;
-    height: 100%;
+    height: 1000px;
     width: 100%;
 }

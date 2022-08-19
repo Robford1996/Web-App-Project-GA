@@ -31,19 +31,25 @@ button{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.container{
-    position: relative;
-    /* width: 50%; */
+button#park{
+    font-size: 20px;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
-/* .container img{
+/* .container{
+    position: relative;
+    width: 50%;
+}
+
+.container img{
     height: auto;
-} */
+}
 
 .container .btn{
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -52,7 +58,7 @@ button{
     border: none;
     cursor: pointer;
     border-radius: 5px;
-}
+} */
 
 div#home{
     flex-wrap: wrap;

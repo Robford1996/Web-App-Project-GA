@@ -1,24 +1,24 @@
 
 
-body{
-    background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
+/* body{
+    /* background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    background-size: cover; */
+
 h1{
     font-family: 'Courier New', Courier, monospace;
 }
 
-nav:first-child{
+div#first{
     display: flex;
     height: 50px;
     background-color: #D6E3F8;
     flex-direction: column;
     align-items: flex-end;
 }
-nav>div{
+/* div>div{
     font-size: 20px;
-}
+} */
 
 img{
     justify-content: space-between;
@@ -55,8 +55,43 @@ button{
     border-radius: 5px;
 }
 
-nav{
+div#home{
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
+    background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+div#magic{
+    color: blue;
+    background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+div#epcot{
+    background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
+    background-size: cover;
+    color: blue;
+    height: 100%;
+    width: 100%;
+}
+div#hollywood{
+    background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
+    background-size: cover;
+    color: blue;
+    height: 100%;
+    width: 100%;
+}
+div#animal{
+    background-image: url("https://www.pngitem.com/pimgs/m/17-171680_disney-world-florida-logo-hd-png-download.png");
+    background-size: cover;
+    color: blue;
+    height: 100%;
+    width: 100%;
 }

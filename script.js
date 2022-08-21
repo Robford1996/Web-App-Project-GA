@@ -1,67 +1,29 @@
-// console.log("js works")
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Download all the global data on app boot
 
-function tabOpen(){
-    window.open("https://disneyworld.disney.go.com/vacation-planning/", "_blank")
-}
+console.log('Start app');
 
-console.log("https://api.themeparks.wiki/v1/entity/waltdisneyworldresort/live")
+let parkData = [];
 
-// console.log($.ajax("https://api.themeparks.wiki/v1/entity/waltdisneyworldresort/live&t=teppan_edo"))
+$.ajax("https://api.themeparks.wiki/v1/entity/waltdisneyworldresort/live")
+   .then(function (data) {
+      parkData = data.liveData;
+      console.log('Data downloaded successfully');
+   });
 
-function handleGetData(event)
-    event.preventDefault()
-    userInput = $input.val()
-$.ajax(URL+userInput).then(function(data){
-    console.log('Information Posted!')
-    console.log(data)
-    $name.text(data.Name)
-    $entitytype.text(data.Entitytype)
-    $status.text(data.Status)
-    $showtimes.text(data.Showtimes)
-    $queue.text(data.Queue)
-}, function(error){
-    console.log("we broke it")
-    console.log(error)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// When user submits the form with their search query
+//filter 
+const $form = $('form');
+const $input = $('#search-query');
+
+$form.on('submit', function(event) {
+   event.preventDefault();
+   const searchQuery = $input.val();
+   console.log('User searched for: ' + searchQuery);
+
 })
+   // Filter the things
+   // Show the things
 
-$.ajax("https://api.themeparks.wiki/v1/entity/waltdisneyworldresort/live").then 
-const URL = "https://api.themeparks.wiki/v1/entity/waltdisneyworldresort/live"
-
-//Variables
-const $name = $("#name")
-const $entitytype = $("#entitytype")
-const $status = $("#status")
-const $showtimes = $("#showtimes")
-const $queue = $("#queue")
-const $input = $('input[type="text"]')
-const $form = $("form")
-
-$form.on("submit", handleGetData)
-
-
-
-
-//event listener possibly? to click on an image to bump down to ___ section on webpage
-
-
-// $('html, body').animate({ scrollTop: 0 }, 'fast');
-// either or ^ v cr stack overflow https://stackoverflow.com/questions/4147112/how-to-jump-to-top-of-browser-page
-// $('html,body').scrollTop(0);
-
-// $("body").css("page-size", "150%")
-
-// const img = document.querySelector('img')
-// img.onclick = () => {
-//   console.log('clicked')
-// }
-
-
-// const btn = document.querySelector(".btn")
-// btn.addEventListener("click", function (evt) {
-//   console.log(evt)
-// })
-
-// const btn = document.querySelector('a')
-// btn.addEventListener("click", function(evt){
-//     console.log(evt)
-// })

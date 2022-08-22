@@ -8,7 +8,7 @@ console.log('Start app');
 const $input = $('#attraction-select');
 const parkData = $.ajax("https://api.themeparks.wiki/v1/entity/waltdisneyworldresort/live")
    .then(function (data) {
-const attractions =  data.liveData.filter(entity => entity.entityType === "ATTRACTION").sort()
+const attractions =  data.liveData.filter(entity => entity.entityType === "ATTRACTION")
 var optionsAsString = "";
 attractions.map((attraction) => {
    debugger

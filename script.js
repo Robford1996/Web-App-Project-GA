@@ -53,3 +53,41 @@ $form.on('submit', function(event) {
    // Filter the things
    // Show the things
 
+//////////////////////////////////////////////////////////////////////
+//DINING INFORMATION
+
+const $dining = $('#dining-select')
+// const selectedRestaurantId = $dining.val()
+parkData.then(function (data){
+const restaurants =  data.liveData.filter(entity => entity.entityType === "RESTAURANT")
+var optionsAsString = "";
+restaurants.map((restaurant) => {
+   debugger
+   const name = restaurant.name
+   const id = restaurant.id
+   optionsAsString += `<option value=${id}> ${name} </option>`
+ })
+$dining.append( optionsAsString );
+//       // console.log('Data downloaded successfully');
+   });
+
+
+const $restaurantName = $('#restaurant');
+const $restaurantStatus = $("#dining-status")
+
+
+$form.on('submit', function(event) {
+   event.preventDefault();
+   // debugger
+   const selectedRestaurantId = $dining.val();
+      $.ajax(`https://api.themeparks.wiki/v1/entity/${selectedRestaurantId}/live`).then(function (data) {
+      const restaurantData = data.liveData[0];
+      const restaurantName = restaurantData.name;
+      const restaurantStatus = restaurantData.status;
+      $restaurantName.text(restaurantName)
+      $restaurantStatus.text(restaurantStatus)
+      console.log("it worked");
+})
+});
+//////////////////////////////////////////////////////////////////////
+//SHOW INFORMATION

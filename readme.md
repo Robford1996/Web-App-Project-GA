@@ -31,7 +31,7 @@ Want to find live data from the Walt Disney Resort? Now you can with "Disney Inf
 * use media query to make the web page mobile friendly as well 
 
 # Deployed Link
-To see the web app <a href="bucolic-lolly-a52d30.netlify.app">Click Here!<a>
+To see the web app <a href="https://bucolic-lolly-a52d30.netlify.app">Click Here!<a>
 
 # Work Cited
   * For lines 16-23 on JavaScript- "https://stackoverflow.com/questions/10247423/dynamically-set-select-options-with-javascript"

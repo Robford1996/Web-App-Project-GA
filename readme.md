@@ -31,9 +31,10 @@ Want to find live data from the Walt Disney Resort? Now you can with "Disney Inf
 * use media query to make the web page mobile friendly as well 
 
 # Deployed Link
+bucolic-lolly-a52d30.netlify.app
 
 # Work Cited
   * For lines 16-23 on JavaScript- "https://stackoverflow.com/questions/10247423/dynamically-set-select-options-with-javascript"
 
 # About The Author
-    I love to build user friendly web applications where I can challenge myself to make improvements to make them better and better. I love coding and solving problems so that I can find ways to make the applications run more efficiently. Creating something from a blank web browser and seeing it come to life brings me so much happiness! 
+I love to build user friendly web applications where I can challenge myself to make improvements to make them better and better. I love coding and solving problems so that I can find ways to make the applications run more efficiently. Creating something from a blank web browser and seeing it come to life brings me so much happiness! 

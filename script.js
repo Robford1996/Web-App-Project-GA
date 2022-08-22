@@ -1,3 +1,7 @@
+function tabOpen(){
+   window.open("https://disneyworld.disney.go.com/vacation-planning/", "_blank")
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Download all the global data on app boot
 

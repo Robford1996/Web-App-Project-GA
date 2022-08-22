@@ -9,6 +9,11 @@ h1{
     font-size: 14px;
 }
 
+main{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
 div#first{
     display: flex;
     height: 50px;
@@ -71,32 +76,16 @@ div#home{
     height: 1000px;
     width: 100%;
 }
-div#magic{
-    color: blue;
-    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/dc/6d/64/cinderella-s-castle-at.jpg?w=1200&h=-1&s=1");
+div#dining{
+    background-image: url("https://www.mickeyvacations.com/images/Dining_logo.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 1000px;
     width: 100%;
 }
-div#epcot{
-    background-image: url("https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2020/12/y762yu4576t131.jpg");
+div#shows{
+    background-image: url("https://i.ytimg.com/vi/5EXg7czQ8Vk/hqdefault.jpg");
     background-size: cover;
-    color: blue;
-    height: 1000px;
-    width: 100%;
-}
-div#hollywood{
-    background-image: url("https://i.ytimg.com/vi/yTp3tOVKDxg/maxresdefault.jpg");
-    background-size: cover;
-    color: blue;
-    height: 1000px;
-    width: 100%;
-}
-div#animal{
-    background-image: url("https://www.disneyfoodblog.com/wp-content/uploads/2021/03/2021-WDW-Animal-Kingdom-Tree-of-Life-Stock2.jpg");
-    background-size: cover;
-    color: blue;
     height: 1000px;
     width: 100%;
 }

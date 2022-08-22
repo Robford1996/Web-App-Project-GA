@@ -21,20 +21,19 @@
     <p><a href="#animal"><img src="https://seeklogo.com/images/A/Animal_Kingdom-logo-0AE049F3E3-seeklogo.com.png" alt="ANIMAL KINGDOM" width="100" height="100"></a></p>
     <main>
       <h1>Disney Information:</h1>
-      <h3>Location :</h3>
+      <p>Attraction Name: </p>
       <p id="name"></p>
-      <p>Type of Location:</p>
-      <p id="entitytype"></p>
       <p>Status: </p>
       <p id="status"></p>
-      <p>Showtimes: </p>
-      <p id="showtimes"></p>
       <p>Wait Time:</p>
       <p id="queue"></p>
-
+ 
       <form action="">
-        <input type="text" placeholder="Enter an Attraction/Restaurant" id="search-query">
-        <input type="submit" value="Submit">
+        <label for="attractions">Choose an Attraction:</label>
+
+        <select name="attractions" id="attraction-select">
+        </select>
+            <input type="submit" value="Submit">
       </form>
     </main>
   </div>

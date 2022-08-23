@@ -12,6 +12,7 @@ h1{
 main{
     flex-direction: column-reverse;
     justify-content: flex-end;
+    align-items: flex-start;
 }
 
 div#first{
@@ -84,7 +85,7 @@ div#dining{
     width: 100%;
 }
 div#shows{
-    background-image: url("https://i.ytimg.com/vi/5EXg7czQ8Vk/hqdefault.jpg");
+    background-image: url("https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/vision-dam/digital/parks-platform/parks-global-assets/disney-world/entertainment/mickeys-magical-friendship-faire/Mickey_facing_front_New-16x9.jpg?2022-03-10T19:33:14+00:00");
     background-size: cover;
     height: 1000px;
     width: 100%;

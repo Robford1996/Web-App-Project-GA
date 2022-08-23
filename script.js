@@ -12,15 +12,16 @@ console.log('Start app');
 const $input = $('#attraction-select');
 const parkData = $.ajax("https://api.themeparks.wiki/v1/entity/waltdisneyworldresort/live")
    .then(function (data) {
-const attractions =  data.liveData.filter(entity => entity.entityType === "ATTRACTION")
-var optionsAsString = "";
-attractions.map((attraction) => {
-   debugger
-   const name = attraction.name
-   const id = attraction.id
-   optionsAsString += `<option value=${id}> ${name} </option>`
- })
-$input.append( optionsAsString );
+      const attractions =  data.liveData.filter(entity => entity.entityType === "ATTRACTION")
+      var optionsAsString = "";
+      attractions.map((attraction) => {
+         // debugger
+         const name = attraction.name
+         const id = attraction.id
+         optionsAsString += `<option value=${id}> ${name} </option>`
+      })
+      $input.append( optionsAsString );
+      return data 
 //       // console.log('Data downloaded successfully');
    });
 
@@ -60,11 +61,15 @@ const $dining = $('#dining-select')
 // const selectedRestaurantId = $dining.val()
 parkData.then(function (data){
 const restaurants =  data.liveData.filter(entity => entity.entityType === "RESTAURANT")
+// debugger
+// console.log
 var optionsAsString = "";
 restaurants.map((restaurant) => {
    // debugger
    const restaurantName = restaurant.name
    const restaurantId = restaurant.id
+   console.log(restaurant.name)
+   console.log(restaurant)
    optionsAsString += `<option value=${restaurantId}> ${restaurantName} </option>`
  })
 $dining.append( optionsAsString );
@@ -81,11 +86,12 @@ $diningForm.on('submit', function(event) {
    event.preventDefault();
    // debugger
    const selectedRestaurantId = $dining.val();
-      $.ajax(`https://api.themeparks.wiki/v1/entity/${selectedRestaurantId}/live`).then(function (data) {
+   // debugger
+   $.ajax(`https://api.themeparks.wiki/v1/entity/${selectedRestaurantId}/live`).then(function (data) {
       const restaurantData = data.liveData[0];
       const restaurantNamed = restaurantData.name;
-      const restaurantStatus = restaurantData.status;r
-      $restaurantNamed.text(restaurantNamed)
+      const restaurantStatus = restaurantData.status;
+      $restaurantName.text(restaurantNamed)
       $restaurantStatus.text(restaurantStatus)
       console.log("it worked");
 })

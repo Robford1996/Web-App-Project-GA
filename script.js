@@ -129,10 +129,11 @@ $showForm.on('submit', function(event){
    const showData = data.liveData[0];
    const showName = showData.name;
    const showStatus = showData.status;
-   const showTimes = showData.showtimes?.startTime || "NO SHOWTIMES"
-
+   const showTimes = showData.showtimes;
+   const startTime = showTimes.map((showtime) => showtime.startTime);
+   console.log(startTime)
    $showName.text(showName);
    $showStatus.text(showStatus);
-   $showTimes.text(showTimes);
-});
-});
+   $showTimes.text(startTime);
+})
+})

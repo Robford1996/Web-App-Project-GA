@@ -11,11 +11,13 @@ console.log('Start app');
 
 const $attractionSelect = $('#attraction-select');
 const $restaurantSelect = $('#dining-select')
+const $showsSeclect = $('#shows-select')
 const parkData = $.ajax("https://api.themeparks.wiki/v1/entity/waltdisneyworldresort/live")
    .then(function (data) {
       // const attractions =  data.liveData.filter(entity => entity.entityType === "ATTRACTION")
       var attractionsOptionsAsString = "";
       var restaurantsOptionsAsString = "";
+      var showsOptionsAsStrings = "";
       data.liveData.map((entity) => {
          if (entity.entityType === "ATTRACTION"){
             const name = entity.name
@@ -27,11 +29,16 @@ const parkData = $.ajax("https://api.themeparks.wiki/v1/entity/waltdisneyworldre
             // console.log(restaurant.name)
             // console.log(restaurant)
             restaurantsOptionsAsString += `<option value=${id}> ${name} </option>`
+         }else if(entity.entityType === "SHOW"){
+            const name = entity.name
+            const id = entity.id
+            showsOptionsAsStrings += `<option value=${id}> ${name} </option>`
          }
          // debugger
       })
       $attractionSelect.append( attractionsOptionsAsString );
       $restaurantSelect.append(restaurantsOptionsAsString);
+      $showsSeclect.append(showsOptionsAsStrings);
       return data 
 //       // console.log('Data downloaded successfully');
    });

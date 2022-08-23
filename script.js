@@ -9,18 +9,29 @@ console.log('Start app');
 
 // let parkData = [];
 
-const $input = $('#attraction-select');
+const $attractionSelect = $('#attraction-select');
+const $restaurantSelect = $('#dining-select')
 const parkData = $.ajax("https://api.themeparks.wiki/v1/entity/waltdisneyworldresort/live")
    .then(function (data) {
-      const attractions =  data.liveData.filter(entity => entity.entityType === "ATTRACTION")
-      var optionsAsString = "";
-      attractions.map((attraction) => {
+      // const attractions =  data.liveData.filter(entity => entity.entityType === "ATTRACTION")
+      var attractionsOptionsAsString = "";
+      var restaurantsOptionsAsString = "";
+      data.liveData.map((entity) => {
+         if (entity.entityType === "ATTRACTION"){
+            const name = entity.name
+            const id = entity.id
+            attractionsOptionsAsString += `<option value=${id}> ${name} </option>`
+         }else if(entity.entityType === "RESTAURANT"){
+            const name = entity.name
+            const id = entity.id
+            // console.log(restaurant.name)
+            // console.log(restaurant)
+            restaurantsOptionsAsString += `<option value=${id}> ${name} </option>`
+         }
          // debugger
-         const name = attraction.name
-         const id = attraction.id
-         optionsAsString += `<option value=${id}> ${name} </option>`
       })
-      $input.append( optionsAsString );
+      $attractionSelect.append( attractionsOptionsAsString );
+      $restaurantSelect.append(restaurantsOptionsAsString);
       return data 
 //       // console.log('Data downloaded successfully');
    });
@@ -37,7 +48,7 @@ const $queue = $("#queue")
 $form.on('submit', function(event) {
    event.preventDefault();
    // debugger
-   const selectedAttractionId = $input.val();
+   const selectedAttractionId = $attractionSelect.val();
    // console.log('User searched for: ' + searchQuery);
    $.ajax(`https://api.themeparks.wiki/v1/entity/${selectedAttractionId}/live`)
    .then(function (data) {
@@ -57,24 +68,24 @@ $form.on('submit', function(event) {
 //////////////////////////////////////////////////////////////////////
 //DINING INFORMATION
 
-const $dining = $('#dining-select')
-// const selectedRestaurantId = $dining.val()
-parkData.then(function (data){
-const restaurants =  data.liveData.filter(entity => entity.entityType === "RESTAURANT")
-// debugger
-// console.log
-var optionsAsString = "";
-restaurants.map((restaurant) => {
-   // debugger
-   const restaurantName = restaurant.name
-   const restaurantId = restaurant.id
-   console.log(restaurant.name)
-   console.log(restaurant)
-   optionsAsString += `<option value=${restaurantId}> ${restaurantName} </option>`
- })
-$dining.append( optionsAsString );
-//       // console.log('Data downloaded successfully');
-   });
+// const $dining = $('#dining-select')
+// // const selectedRestaurantId = $dining.val()
+// parkData.then(function (data){
+// const restaurants =  data.liveData.filter(entity => entity.entityType === "RESTAURANT")
+// // debugger
+// // console.log
+// var optionsAsString = "";
+// restaurants.map((restaurant) => {
+//    // debugger
+//    const restaurantName = restaurant.name
+//    const restaurantId = restaurant.id
+//    console.log(restaurant.name)
+//    console.log(restaurant)
+//    optionsAsString += `<option value=${restaurantId}> ${restaurantName} </option>`
+//  })
+// $dining.append( optionsAsString );
+// //       // console.log('Data downloaded successfully');
+//    });
 
 
 const $diningForm = $("#food");
@@ -85,7 +96,7 @@ const $restaurantStatus = $("#dining-status");
 $diningForm.on('submit', function(event) {
    event.preventDefault();
    // debugger
-   const selectedRestaurantId = $dining.val();
+   const selectedRestaurantId = $restaurantSelect.val();
    // debugger
    $.ajax(`https://api.themeparks.wiki/v1/entity/${selectedRestaurantId}/live`).then(function (data) {
       const restaurantData = data.liveData[0];

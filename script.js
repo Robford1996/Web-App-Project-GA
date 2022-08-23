@@ -11,7 +11,7 @@ console.log('Start app');
 
 const $attractionSelect = $('#attraction-select');
 const $restaurantSelect = $('#dining-select')
-const $showsSeclect = $('#shows-select')
+const $showsSelect = $('#shows-select')
 const parkData = $.ajax("https://api.themeparks.wiki/v1/entity/waltdisneyworldresort/live")
    .then(function (data) {
       // const attractions =  data.liveData.filter(entity => entity.entityType === "ATTRACTION")
@@ -38,7 +38,7 @@ const parkData = $.ajax("https://api.themeparks.wiki/v1/entity/waltdisneyworldre
       })
       $attractionSelect.append( attractionsOptionsAsString );
       $restaurantSelect.append(restaurantsOptionsAsString);
-      $showsSeclect.append(showsOptionsAsStrings);
+      $showsSelect.append(showsOptionsAsStrings);
       return data 
 //       // console.log('Data downloaded successfully');
    });
@@ -116,3 +116,25 @@ $diningForm.on('submit', function(event) {
 });
 //////////////////////////////////////////////////////////////////////
 //SHOW INFORMATION
+
+const $showForm = $('#fantasmic');
+const $showName = $('#show-name');
+const $showStatus = $('#show-status')
+const $showTimes = $('#show-times')
+
+$showForm.on('submit', function(event){
+   event.preventDefault()
+   const selectedShowId = $showsSelect.val();
+   $.ajax(`https://api.themeparks.wiki/v1/entity/${selectedShowId}/live`).then(function (data) {
+   const showData = data.liveData[0];
+   const showName = showData.name;
+   const showStatus = showData.status;
+   const showTimes = showData.showtimes;
+   const startTime = showTimes.map((start) =>{
+      return start = showTimes.startTime
+   })
+   $showName.text(showName);
+   $showStatus.text(showStatus);
+   $showTimes.text(showTimes);i
+})
+});

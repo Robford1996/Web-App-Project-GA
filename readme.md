@@ -25,7 +25,7 @@ Want to find live data from the Walt Disney Resort? Now you can with "Disney Inf
 * The information will be presented to the user giving them real life data from the actual park letting them know information like current attraction wait times.
 
 # Images
-http://i.imgur.com/rY24hFO.png
+http://i.imgur.com/rY24hFO.jpeg
 
 http://i.imgur.com/PfwDawa.png
 

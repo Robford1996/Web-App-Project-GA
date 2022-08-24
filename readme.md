@@ -25,15 +25,12 @@ Want to find live data from the Walt Disney Resort? Now you can with "Disney Inf
 * The information will be presented to the user giving them real life data from the actual park letting them know information like current attraction wait times.
 
 # Images
-http://i.imgur.com/rY24hFO.jpeg
+<img width="1440" alt="Screen Shot 2022-08-23 at 6 59 06 PM" src="https://user-images.githubusercontent.com/110005039/186523710-f854032b-3ae4-4f4d-956b-c000613b8869.png">
+<img width="999" alt="Screen Shot 2022-08-23 at 6 59 18 PM" src="https://user-images.githubusercontent.com/110005039/186523796-44b19b03-31c7-43c4-85d5-85de9c2983d9.png">
+<img width="1440" alt="Screen Shot 2022-08-23 at 6 59 36 PM" src="https://user-images.githubusercontent.com/110005039/186523824-3be1db67-0236-4fec-89ce-ed9cf2c7207c.png">
+<img width="1440" alt="Screen Shot 2022-08-23 at 7 00 07 PM" src="https://user-images.githubusercontent.com/110005039/186523872-2f54c0a3-d072-4419-b029-c13632154516.png">
+<img width="1440" alt="Screen Shot 2022-08-23 at 7 00 19 PM" src="https://user-images.githubusercontent.com/110005039/186523907-28b90fa4-7668-4cf5-bc4b-eff8884544eb.png">
 
-http://i.imgur.com/PfwDawa.png
-
-http://i.imgur.com/WCkMvAX.png
-
-http://i.imgur.com/TgEJNtY.png
-
-http://i.imgur.com/fsoXETK.png
 
 # Future Plans
 * Would like to find API's with more data to retrieve from and possibly build upon the web app

@@ -17,7 +17,7 @@ Want to find live data from the Walt Disney Resort? Now you can with "Disney Inf
 * CSS3
 * JavaScript
 * jQuery
-* *AJAX
+* AJAX
 
 # Features
 

@@ -35,6 +35,7 @@ Want to find live data from the Walt Disney Resort? Now you can with "Disney Inf
 # Future Plans
 * Would like to find API's with more data to retrieve from and possibly build upon the web app
 * use media query to make the web page mobile friendly as well 
+* Would like to perhaps use a bootstrap to make the CSS of the web app look a lot better
 
 # Deployed Link
 To see the web app <a href="https://bucolic-lolly-a52d30.netlify.app">Click Here!<a>

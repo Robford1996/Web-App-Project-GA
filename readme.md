@@ -26,9 +26,13 @@ Want to find live data from the Walt Disney Resort? Now you can with "Disney Inf
 
 # Images
 https://i.imgur.com/rY24hFO.png
+
 https://i.imgur.com/PfwDawa.png
+
 https://i.imgur.com/WCkMvAX.png
+
 https://i.imgur.com/TgEJNtY.png
+
 https://i.imgur.com/fsoXETK.png
 
 # Future Plans

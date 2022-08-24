@@ -25,15 +25,15 @@ Want to find live data from the Walt Disney Resort? Now you can with "Disney Inf
 * The information will be presented to the user giving them real life data from the actual park letting them know information like current attraction wait times.
 
 # Images
-https://i.imgur.com/rY24hFO.png
+http://i.imgur.com/rY24hFO.png
 
-https://i.imgur.com/PfwDawa.png
+http://i.imgur.com/PfwDawa.png
 
-https://i.imgur.com/WCkMvAX.png
+http://i.imgur.com/WCkMvAX.png
 
-https://i.imgur.com/TgEJNtY.png
+http://i.imgur.com/TgEJNtY.png
 
-https://i.imgur.com/fsoXETK.png
+http://i.imgur.com/fsoXETK.png
 
 # Future Plans
 * Would like to find API's with more data to retrieve from and possibly build upon the web app

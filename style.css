@@ -83,9 +83,9 @@ div#home{
     width: 100%;
 }
 div#dining{
-    background-image: url("https://www.mickeyvacations.com/images/Dining_logo.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxr1u4-PNtb9yQ8Jz_f9Wa8ve05FydxLbblg&usqp=CAU");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 1000px;
     width: 100%;
 }

@@ -34,6 +34,11 @@ div#first{
     flex-direction: row;
 } */
 
+/* main#drink{
+justify-content: flex-start;
+align-items: flex-start;
+} */
+
 button{
     font-family: 'Courier New', Courier, monospace;
 }

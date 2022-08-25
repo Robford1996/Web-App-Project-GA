@@ -47,7 +47,7 @@ const parkData = $.ajax("https://api.themeparks.wiki/v1/entity/waltdisneyworldre
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // When user submits the form with their search query
 //filter 
-const $form = $('form');
+const $form = $('#top');
 const $name = $("#name")
 const $status = $("#status")
 const $queue = $("#queue")
@@ -131,6 +131,7 @@ $showForm.on('submit', function(event){
    const showStatus = showData.status;
    const showTimes = showData.showtimes;
    const startTime = showTimes.map((showtime) => showtime.startTime);
+   // $(".each").append(startTime)
    console.log(startTime)
    $showName.text(showName);
    $showStatus.text(showStatus);
